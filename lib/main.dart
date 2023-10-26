@@ -5,21 +5,32 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-   var screenheight= MediaQuery.of(context).size.height;
-   var containerheight= screenheight/4;
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:SafeArea(
-        child: SafeArea(
-          child: Scaffold(
-            body: Center(
-              child: Container(
-                height: containerheight  ,
-                width: MediaQuery.of(context).size.width/2,
-                color: Colors.deepOrange,
-              ),
+      home:Scaffold(
+        body: ListView(
+          children: [
+            ListTile(
+              title: Text("Easy Explation"),
+              subtitle: Text("Learn everything with easy explanation"),
+              leading: CircleAvatar(child: Icon(Icons.message),),
+              trailing: Icon(Icons.add_a_photo),
             ),
-          ) ,
+            ListTile(
+              title: Text("Easy Explation"),
+              subtitle: Text("Learn everything with easy explanation"),
+              leading: CircleAvatar(child: Icon(Icons.message),),
+              trailing: Icon(Icons.add_a_photo),
+            ),
+            ListTile(
+              title: Text("Easy Explation"),
+              subtitle: Text("Learn everything with easy explanation"),
+              leading: CircleAvatar(child: Icon(Icons.message),),
+              trailing: Icon(Icons.add_a_photo),
+            ),
+
+          ],
         ),
       ),
     );
