@@ -7,18 +7,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("HomePage"),
-          centerTitle: true,
-          leading: Icon(Icons.message),
-          actions: <Widget>[
-            IconButton(icon: Icon(Icons.add_a_photo),  onPressed:() {} )
-          ],
+      home: SafeArea(
+        child: Scaffold(
+          body: Text("I love Allah and prophet",style: TextStyle(fontSize:35  ),),
         ),
-        body: Center(
-          child: Text("This is my first app",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold ) ,),
-        )
+
       ),
     );
   }
