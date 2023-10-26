@@ -9,9 +9,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          body: Text("I love Allah and prophet",style: TextStyle(fontSize:35  ),),
+          body: Container(
+            height: 200,
+            width: 300,
+            decoration: BoxDecoration(color: Colors.deepOrange),
+            child: Text("I Love and Prophet",style: TextStyle(fontSize: 30),),
+          ),
         ),
-
       ),
     );
   }
