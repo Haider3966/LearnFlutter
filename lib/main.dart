@@ -7,14 +7,33 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SafeArea(
-        child: Scaffold(
-          body: Container(
-            height: 200,
-            width: 300,
-            decoration: BoxDecoration(color: Colors.deepOrange),
-            child: Text("I Love and Prophet",style: TextStyle(fontSize: 30),),
-          ),
+      home: Scaffold(
+        appBar: AppBar(title: Text("Column"),),
+        body: Column(
+          children: <Widget>[
+            Container(
+              height: 200,
+              width: 150,
+              color: Colors.deepOrange,
+            ),
+            SizedBox(width: 10,),
+            Container(
+              height: 200,
+              width: 150,
+              color: Colors.deepOrange,
+            ),
+            SizedBox(height: 10,),
+            Container(
+              height: 200,
+              width: 150,
+              color: Colors.deepOrange,
+            ),SizedBox(height: 10,),
+            Container(
+              height: 200,
+              width: 150,
+              color: Colors.deepOrange,
+            ),
+          ],
         ),
       ),
     );
