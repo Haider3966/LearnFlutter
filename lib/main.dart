@@ -8,32 +8,44 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: Text("Column"),),
-        body: Column(
-          children: <Widget>[
-            Container(
-              height: 200,
-              width: 150,
-              color: Colors.deepOrange,
-            ),
-            SizedBox(width: 10,),
-            Container(
-              height: 200,
-              width: 150,
-              color: Colors.deepOrange,
-            ),
-            SizedBox(height: 10,),
-            Container(
-              height: 200,
-              width: 150,
-              color: Colors.deepOrange,
-            ),SizedBox(height: 10,),
-            Container(
-              height: 200,
-              width: 150,
-              color: Colors.deepOrange,
-            ),
-          ],
+        appBar: AppBar(
+          title: Text("Row"),
+        ),
+        body: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: <Widget>[
+              Container(
+                height: 200,
+                width: 150,
+                color: Colors.deepOrange,
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Container(
+                height: 200,
+                width: 150,
+                color: Colors.deepOrange,
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                height: 200,
+                width: 150,
+                color: Colors.deepOrange,
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                height: 200,
+                width: 150,
+                color: Colors.deepOrange,
+              ),
+            ],
+          ),
         ),
       ),
     );
